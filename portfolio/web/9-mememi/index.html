@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1,maximum-scale=1">
+    <meta name="author" content="PARK MOON YOUNG">
+    <meta name="keywords" content="카페,미미미,이탈리안,레스토랑">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.flowslider.js"></script>
+    <script src="js/main.js"></script>
+    
+<!--[if lt IE9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/html5shiv-printshiv.js"></script>
+<script src="js/respond.js"></script>
+<!--[endif]-->    
+</head>
+<body>
+<div id="skipNavi">
+    <a href="">주메뉴가기</a>
+    <a href="">본문으로가기</a>
+</div>
+<div class="head_top">
+    <a href=""><img src="images/n-logo2.png" alt=""></a>
+</div>
+<div id="wrap" class="wrap">
+<header id="header">
+   <div class="header_wrap">
+    <h1 class="logo"><a href=""><img src="images/mememi.png" alt="mememi"></a></h1>
+       
+    <button class="btn_allmenu_open btn_allmenu"><span>메뉴열기</span></button>
+    <nav>        
+        <button class="btn_allmenu_close btn_allmenu"><span>메뉴닫기</span></button>
+        <ul class="gnb">
+            <li>
+                <a href="">MeMeMi</a>
+                <div class="depth">
+                    <div class="depth_inner">   
+                        <ul class="dep1">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Location</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                        <div>
+                            <a href="">
+                                <h2>About MeMeMi</h2>
+                                <img src="images/19-0.png" alt="mememi">
+                                <p>콜렉트 카페 미미미를 소개합니다.<span>Read More+</span></p>
+                            </a>                        
+                        </div>
+                        <div>
+                            <a href="">
+                                <h2>In MILANO</h2>
+                                <img src="images/19-1.png" alt="이탈리아 밀라노점">
+                                <p>VIA BRERA 23<span>이탈리아 밀라노점</span></p>
+                            </a>    
+                        </div>
+                    </div><!--depth_inner-->    
+                </div><!--depth-->
+            </li>
+            <li>
+                <a href="">Kitchen</a>
+                <div class="depth">
+                    <div class="depth_inner">   
+                        <ul class="dep1">
+                            <li><a href="">Salad</a></li>
+                            <li><a href="">brunch plate</a></li>
+                            <li><a href="">pasta</a></li>
+                            <li><a href="">rice</a></li>
+                            <li><a href="">steak</a></li>
+                            <li><a href="">pizza</a></li>
+                            <li><a href="">side</a></li>
+                        </ul>
+                        <ul class="dep1">
+                            <li><a href="">bread & cookie</a></li>
+                            <li><a href="">cake</a></li>
+                            <li><a href="">season menu</a></li>
+                        </ul>
+                        <div>
+                            <a href="">
+                                <h2>New Menu</h2>
+                                <img src="images/35-0.png" alt="고기">
+                                <p><span>가드닝 스테이크 플래터</span></p>
+                            </a>    
+                        </div>
+                    </div><!--depth_inner--> 
+                </div>
+            </li>
+            <li>
+                <a href="">Caffe</a>
+                <div class="depth">
+                    <div class="depth_inner">   
+                        <ul class="dep1">
+                            <li><a href="#">+Season Menu</a></li>
+                            <li><a href="#">Espresso</a></li>
+                            <li><a href="#">Coffee</a></li>
+                            <li><a href="#">Tea</a></li>
+                            <li><a href="#">Tea Latte</a></li>
+                            <li><a href="#">Others</a></li>
+                            <li><a href="#">Ade</a></li>
+                        </ul>
+                        <ul class="dep1">
+                            <li><a href="#">Fresh Juice</a></li>
+                            <li><a href="#">Smoothie</a></li>
+                            <li><a href="#">Granita</a></li>
+                            <li><a href="#">Ice Cream</a></li>
+                            <li><a href="#">Dessert</a></li>
+                            <li><a href="#">Food</a></li>
+                        </ul>
+                        <div>
+                            <a href="">
+                                <h2>New Menu</h2>
+                                <img src="images/20-0.png" alt="커피">
+                                <p><span>스모키 바나나 에스프레소</span></p>
+                            </a>    
+                        </div>
+                    </div><!--depth_inner--> 
+                </div>
+            </li>
+            <li>
+                <a href="">Lifestyle</a>
+                <div class="depth">
+                    <div class="depth_inner">   
+                        <ul class="dep1">
+                            <li><a href="">Polspotten</a></li>
+                            <li><a href="">Qeeboo</a></li>
+                        </ul>
+                        <div>
+                            <a href="">
+                                <h2>Polspotten</h2>
+                                <img src="images/25-0.png" alt="polspotten">
+                            </a>                        
+                        </div>
+                        <div></div>                
+                    </div><!--depth_inner--> 
+                </div>
+            </li>
+            <li>
+                <a href="">Trend</a>
+                <div class="depth">
+                    <div class="depth_inner">   
+                        <div>
+                            <a href="">
+                                <h2>Food</h2>
+                                <img src="images/26-0.png" alt="치즈">
+                                <p>치즈 덕후들 모여라!<span>Read More+</span></p>
+                            </a>                        
+                        </div>
+                        <div>
+                            <a href="">
+                                <h2>Lifestyle</h2>
+                                <img src="images/26-1.png" alt="supercoolmarket">
+                                <p>치즈 덕후들 모여라!<span>Read More+</span></p>
+                            </a>                        
+                        </div>
+                        <div>
+                            <a href="">
+                                <h2>Culture</h2>
+                                <img src="images/26-2.png" alt="의자">
+                                <p>Inspired By Distintive Tableware<span>Read More+</span></p>
+                            </a>    
+                        </div>
+                    </div><!--depth_inner--> 
+                </div>
+            </li>
+            <li>
+                <a href="">Collective</a>
+                <div class="depth">
+                    <div class="depth_inner">   
+                        <ul class="dep1">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Table</a></li>
+                            <li><a href="">Chair</a></li>
+                            <li><a href="">Stool</a></li>
+                            <li><a href="">Objet</a></li>
+                            <li><a href="">Lighting</a></li>
+                            <li><a href="">Tumbler</a></li>
+                            <li><a href="">Kitchen</a></li>
+                        </ul>
+                        <div>
+                            <a href="">
+                                <h2>Table</h2>
+                                <img src="images/29-0.png" alt="파인애플모형">
+                                <p>pineapple jar multi pink<span>View More+</span></p>
+                            </a>                        
+                        </div>
+                        <div>
+                            <a href="">
+                                <h2>Stool</h2>
+                                <img src="images/29-1.jpg" alt="이상한거">
+                                <p>Zig Zag pink<span>View More+</span></p>
+                            </a>    
+                        </div>
+                    </div><!--depth_inner--> 
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <ul class="topmenu">
+        <li><a href="">Login</a></li>
+        <li><a href="">Join</a></li>
+        <li><a href="">My Page</a></li>
+        <li><a href="">Delivery</a></li>
+        <li class="btn_search">
+            <form action=""><input type="search"></form>
+        </li>
+    </ul>
+<!--
+    <ul class="topmenu_mob">
+        <li><a href="">로그인</a></li>
+        <li><a href="">주문조회</a></li>
+        <li><a href="">검색</a></li>
+    </ul>
+-->
+    </div><!--header_wrap-->
+</header>    
+<main id="container">
+    <section class="sec1">
+        <div class="slider">
+            <div class="sl1">
+                <a href="">
+                    <div class="sl_text">
+                        <h2>Deliciously MOMENTS</h2>
+                        <p>Ketchen MeMeMi SEASON MENU</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sl2">
+                <a href="">
+                    <div class="sl_text">
+                        <h2>Deliciously MOMENTS</h2>
+                        <p>Ketchen MeMeMi SEASON MENU</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sl3">
+                <a href="">
+                    <div class="sl_text">
+                        <h2>Deliciously MOMENTS</h2>
+                        <p>Ketchen MeMeMi SEASON MENU</p>
+                    </div>
+                </a>
+            </div>
+        </div><!--slider-->
+        <div class="for_snow">
+            <a href="">
+                <div class="snow_text">
+                    <h2>WISH FOR SHOW</h2>
+                    <p>CAFE MeMeMi SEASON MENU</p>
+                </div>
+            </a>
+        </div><!--for_snow-->
+    </section><!--sec1-->
+    <section class="sec2">
+        <div class="inner">
+            <h2 class="sec_title">Best Menu</h2>
+            <p class="sec_exp">미미미의 시그니쳐 푸드<br>
+                가장 많은 사랑을 받은 베스트셀링 메뉴는?
+            </p>
+            <div class="best_wrap">
+                <div class="best_submenu img_submenu">
+                   <a href="">
+                     <img src="images/13-0.png" alt="코지뱅쇼">
+                    <h3>코지 뱅쇼(논알콜) <br>Cozybin Chaud(Non alchol)</h3>
+                    <p>
+                        뱅쇼베이스와 제철과일, <br>
+                        시나몬이 함께 어우러진 논알코올 뱅쇼! <br>
+                        이번겨울은 코지 뱅쇼와 함께 따뜻한 겨울을 보내 <br>
+                        보는 건 어떨까요?
+                    </p>
+                    </a>
+                </div>
+                <div class="best_submenu img_submenu">
+                    <a href="">
+                    <img src="images/13-1.png" alt="스모키 바나나 에스프레소">
+                    <h3>
+                        스모키 바나나 에스프레소 <br>
+                        (Smoky Banana Espresso)
+                    </h3>
+                    <p>
+                        스모키한 에스프레소에 달콤한 바나나,<br>
+                        부드러운 밀키폼으로 마무리된 <br>
+                        스모키 바나나 에스프레소 <br>
+                        한입만으로도 눈이 번쩍, 정신이 번쩍! 
+                    </p>
+                    </a>
+                </div>
+                <div class="best_submenu img_submenu">
+                    <a href="">
+                    <img src="images/13-2.png" alt="가드닝 스테이크 플래터">
+                    <h3>
+                        가드닝 스테이크 플래터 <br>
+                        (Gardening steake platter)
+                    </h3>
+                    <p>
+                        다양한 채소와 부드러운 스테이크가 가득! <br>
+                        풍성한 파티를 즐기려면, <br>
+                        스테잌 플래터로 party time!
+                    </p>
+                    </a>
+                </div>
+                <div class="best_submenu img_submenu">
+                    <a href="">
+                    <img src="images/13-3.png" alt="올라~감바스 알아히요">
+                    <h3>
+                        올라! 감바스 알아히요 <br>
+                        (ola! gambasal ajillo)
+                    </h3>
+                    <p>
+                        입안에서 펼쳐지는 스페인 <br>
+                        풍부한 새우와 향긋한 마늘이 <br>
+                        만나 탄생한 맛의 향연을 느껴보세요!
+                    </p>
+                    </a>
+                </div>
+            </div><!--best_wrap-->
+        </div><!--inner-->
+    </section><!--sec2-->
+    <section class="sec3">
+        <div class="inner">
+            <h2 class="sec_title">Collective Lifestyle Shop</h2>
+            <p class="sec_exp">
+                카페를 넘어 문화와 라이프스타일이 공존하는 콜렉트 카페 미미미 <br> 미미미가 제안하는 감각적인 아이템들을 만나보세요.
+            </p>
+            <div class="collect_wrap">
+                <div class="sec3_sub sec3_sub_left">
+                    <div class="sec3_long">
+                        <a href="">
+                            <img src="images/14-0.jpg" alt="">
+                            <div class="sub_text">
+                                Add joy to your own space!
+                                <p>View Now</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sec3_short">
+                        <a href="">
+                            <img src="images/14-5.jpg" alt="">
+                            <div class="sub_text">
+                                Playing around with Pols Potten
+                                <p>View Now</p>
+                            </div>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="sec3_sub sec3_sub_center">
+                    <div class="sec3_short">
+                        <a href="">
+                            <img src="images/14-1.jpg" alt="">
+                            <div class="sub_text">
+                                Inspired by distinctive tableware
+                                <p>View Now</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="sec3_long">
+                        <a href="">
+                            <img src="images/14-4.jpg" alt="">
+                            <div class="sub_text">
+                                Brighten up your kitchen
+                                <p>View Now</p>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="sec3_sub sec3_sub_right">
+                    <div class="sec3_long">
+                        <a href="">
+                            <img src="images/14-2.jpg" alt="">
+                            <div class="sub_text">
+                                The unique 'Zig Zag Stool' of Pols Potten
+                                <p>View Now</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="sec3_short">
+                        <a href="">
+                            <img src="images/14-6.jpg" alt="">
+                            <div class="sub_text">
+                                How do you like to stylize your favorite items?
+                                <p>View Now</p>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+            </div><!--collec_wrap-->
+        </div><!--inner-->
+        <div class="flowslider" id="flowslider">
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-2.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-3.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-4.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-5.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-6.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-7.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-8.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-9.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-10.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-11.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-12.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-13.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-14.png" alt=""></p>
+                </a>
+            </div>
+            <div class="issue">
+                <a href="">
+                    <p class="flowimg"><img src="images/fl-15.png" alt=""></p>
+                </a>
+            </div>
+        </div>
+    </section><!--sec3-->
+    <section class="sec4">
+        <div class="sec4_flowimg">
+            <img src="images/object02.png" alt="">
+        </div>
+        <div class="sec_text">
+            <h2 class="sec_title">COLLECT CAFFE MeMeMi 
+            <span>FROP MILANO</span>
+            </h2>
+            <p class="sec_exp">
+           카페 미미미는 이탈리아 밀라노 비아 브레라 23에서 탄생한 글로벌 콜렉트 카페입니다. <br>
+           미미미는 카페라는 틀에서 벗어나 패션과 라이프스타일을 접목한 새로운 공간을 선보이고 있습니다. 
+            </p>
+        </div><!--sec_text-->
+        <div class="sec4_content">
+            <div class="inner">
+                <div class="">
+                    <a href="">
+                        <img src="images/15-0.png" alt="">
+                        <h4>카페미미미 AK&홍대점</h4>
+                        <p>
+                            서울특별시 마포구 영화로 188 <br>
+                            AK&홍대점 2층
+                        </p>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <img src="images/15-1.png" alt="">
+                        <h4>키친미미미 대구 동성로 시코르점</h4>
+                        <p>
+                            대구광역시 중구 동성로2길 45, <br>
+                            대구 동성로 시코르점 1층
+                        </p>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <img src="images/15-2.png" alt="">
+                        <h4>키친미미미 현대시티아울렛 가산점</h4>
+                        <p>
+                            서울특별시 금천구 디지털로 10길 9, <br>
+                            현대시티아울렛 가산점 2층
+                        </p>
+                    </a>
+                </div>
+                <div class="">
+                    <a href="">
+                        <img src="images/store_new04.png" alt="">
+                        <h4>카페미미미 이탈리아 밀라노점</h4>
+                        <p>
+                            VIA BRERA 23 20121 MILANO ITALY
+                        </p>
+                    </a>
+                </div>
+            </div><!--inner-->
+        </div><!--sec4_content-->
+    </section><!--sec4-->
+    <section class="sec5">
+        <div class="inner">
+            <h2 class="sec_title">
+                CAFFE MeMeMi TREND
+            </h2>
+            <p class="sec_exp">
+                카페 미미미만의 유니크한 스토리 <br>
+                지금 확인해보세요!
+            </p>
+            <div class="sec5_content">
+                <div class="sec5_con sec5_con_top">
+                    <div class="sec5_twoimg">
+                        <p><a href=""><img src="images/16-0.png" alt=""></a></p>
+                        <p><a href=""><img src="images/16-1.png" alt=""></a></p>
+                    </div>
+                    <div class="sec5_twoimg">
+                        <p><a href=""><img src="images/16-2.png" alt=""></a></p>
+                        <p><a href=""><img src="images/16-3.png" alt=""></a></p>
+                    </div>
+                    <div class="sec5_bigimg">
+                        <a href="">
+                            <img src="images/16-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="sec5_con sec5_con_bottom">
+                    <div class="sec5_bigimg">
+                        <a href=""><img src="images/16-5.png" alt=""></a>
+                    </div>
+                    <div class="sec5_twoimg">
+                        <p><a href=""><img src="images/16-6.png" alt=""></a></p>
+                        <p><a href=""><img src="images/16-7.png" alt=""></a></p>
+                    </div>
+                    <div class="sec5_twoimg">
+                        <p><a href=""><img src="images/16-8.png" alt=""></a></p>
+                        <p><a href=""><img src="images/16-9.png" alt=""></a></p>
+                    </div>
+                </div>
+            </div><!--sec5_content-->
+        </div><!--inner-->
+    </section><!--sec5-->
+    <section class="sec6">
+        <h2 class="sec_title">
+            Stay connected! <br>
+            Follow us on instagram
+        </h2>
+        <p class="sec_exp">@mememi.official</p>
+        <div class="sec6_content">
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss1.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            신선한 해산물이 퐁당!
+                            토마토 스튜처럼 즐기는 매콤~한 파스타!
+                            #시칠리안핫스튜 ♥️
+                            ⠀#mememi #kitchenmememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss2.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                           바삭바삭한 베이컨 칩과 촉촉한 포테이토!
+                            사워크림의 만남 #포테이토베이컨 피자🍕🍟
+                            ⠀
+                            #mememi #kitchenmememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss3.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            분홍파스타
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss4.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            달콤한 #캐러멜케이크 한 입에 피로가 사르르💛
+                            ⠀
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss5.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            부드러운 마스카포네 치즈에
+                            진한 카카오&말차 파우더가 더해져
+                            입안 가득 사르르 녹는 #미미미 #티라미수💜
+                            ⠀
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss6.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            미미미 베이커리는 Made by MeMeMi ♥️
+                            ⠀
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss7.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            추운 날씨에도 감기 걱정 NO! 🍋
+                            생기를 불어넣어 줄 미미미 티,
+                            이름마저 아름다운 #뷰티풀미스레몬
+                            ⠀
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss8.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            FRESH LEMON ! 🍋
+                            ⠀
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss13.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            입가에 미소를 번지게 하는 귀여운 #미미미 아이스크림 💝
+                            ⠀
+                            #마이리틀브라더 #마이코코
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss14.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            LOVELY COTTON CANDY ♥️
+                            ⠀
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss15.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            미미미에 사는 #귀염뽀짝 아이스크림 크루💖
+
+                            #코튼캔디 #마이코코 #마이리틀브라더 
+                            #mememi #cafemememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="img_box">
+                <a href="">
+                    <img src="images/ss16.jpg" alt="">
+                    <div class="text_box">
+                        <p>
+                            멈출 수가 없는 단짠단짠 감자튀김 #허니슈스트링 🍟
+
+                            #mememi #kitchenmememi
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div><!--sec6_content-->
+    </section><!--sec6-->
+</main>
+<footer id="footer">
+    <div class="footer_wrap">
+        <div class="inner">
+            <div class="footer_info">
+                <h1 class="footer_logo"><img src="images/neon-logo2.png" alt="mememi"></h1>
+                <p>                    
+		          (주)미미미 대표이사:양지해, Add : 서울 강남구 도산대로 318 SB타워 9층, Tel : 02-410-0080 <br>                 
+		            E-mail : jhlee1@metrocity.co.kr, 사업자등록번호 : 519-87-00640, 통신판매업신고 : 2017-서울강남-0327
+                    <br>
+		            개인정보관리책임자 : 이재학
+                </p>
+            </div>
+            <div class="footer_menu">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="">개인정보취급방침</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="footer_menu">
+                <h4>Mememi</h4>
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">매장소개</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div><!--inner-->
+    </div><!--footer_wrap-->
+</footer>    
+</div><!--wrap-->
+</body>
+</html>

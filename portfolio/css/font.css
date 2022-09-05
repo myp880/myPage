@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+
+@font-face{
+  font-family:font1;
+  font-style:normal;
+  font-weight:600;
+  font-size:25px;
+  src:url(../fonts/KCC.ttf) format('truetype');
+
+}
+
+@font-face{
+  font-family:font2;
+  font-style:normal;
+  font-weight:normal;
+  font-size:25px;
+  src:url(../fonts/IndieFlower.ttf) format('truetype');
+
+}
+@font-face{
+  font-family:font3;
+  font-style:normal;
+  font-weight:600;
+  font-size:25px;
+  src:url(../fonts/Jalnan.ttf) format('truetype');
+
+}
+@font-face{
+  font-family:font4;
+  font-style:normal;
+  font-weight:600;
+  font-size:25px;
+  src:url(../fonts/Pacifico-Regular.ttf) format('truetype');
+
+}
+@font-face{
+  font-family:font5;
+  -ms-font-family:font5;
+  font-style:normal;
+  font-weight:600;
+  font-size:25px;
+  src:url(../fonts/SSAnt.ttf) format('truetype');
+
+}
+@font-face{
+  font-family:font6;
+  -ms-font-family:font6;
+  font-style:normal;
+  font-weight:600;
+  font-size:25px;
+  src:url(../fonts/NotoSansKR-Regular.otf) format('truetype');
+
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,user-scalable=yew,initial-scale=1,maximum-scale=1">
+<!--시간나면 반응형으로 만들자-->
+
+<title>Document</title>
+
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div id="skipNavi">
+	<a href="">본문바로가기</a>
+	<a href="">주메뉴가기</a>
+</div>
+<header id="header">
+	<div class="header_top">
+		<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="장인가구"></a></h1>
+		<div class="topmenu">
+			<a href="login.html" class="login">로그인</a>
+			<a href="join1.html" class="user_join">회원가입</a>
+			<a href="" class="search"><img src="images/search.png" alt="search"></a>
+		</div>
+	</div><!--header_top-->
+	<nav class="gnb_wrap">
+		<div class="gnb_all">
+			<ul class="gnb">
+				<li>
+					<a href="">회사소개</a>
+					<ul class="deps">
+						<li><a href="">CEO 인사말</a></li>
+						<li><a href="">연혁</a></li>
+						<li><a href="">기업철학</a></li>
+						<li><a href="">사업영역</a></li>
+						<li><a href="">CI소개</a></li>
+						<li><a href="">찾아오시는길</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">제품소개</a>
+					<ul class="deps">
+						<li><a href="">베스트제품</a></li>
+						<li><a href="">침실</a></li>
+						<li><a href="">거실</a></li>
+						<li><a href="">주방</a></li>
+						<li><a href="">키즈/오피스</a></li>
+						<li><a href="">소가구</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">장인가구 소식</a>
+					<ul class="deps">
+						<li><a href="">공지사항</a></li>
+						<li><a href="">고객사용기</a></li>
+						<li><a href="">드라마협찬</a></li>
+						<li><a href="">신규 대리점</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">이벤트</a>
+					<ul class="deps">
+						<li><a href="">진행 중 이벤트</a></li>
+						<li><a href="">당첨자발표</a></li>
+						<li><a href="">지난 이벤트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">대리점 안내</a>
+					<ul class="deps">
+						<li><a href="">대리점 찾기</a></li>
+						<li><a href="">대리점 개설안내</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">고객센터</a>
+					<ul class="deps">
+						<li><a href="">고객서비스</a></li>
+						<li><a href="">이동 설치 서비스</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div id="container">
+<div class="login_inner">
+	<h2 class="title_login">로그인</h2>
+	<div class="login_wrap">
+		<div class="login_table">
+			<form action="">
+			<legend class="blind">로그인폼</legend>
+			<fieldset>
+			<table>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="user_id">아이디</label></th>
+						<td>
+							<input type="text" id="user_id" name="user_id" placeholder="아이디를 입력해 주세요.">
+						</td>
+						<td rowspan="2" class="btn_login1">
+							<button>로그인</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="user_pw">비밀번호</label></th>
+						<td>
+							<input type="password" id="user_pw" name="user_pw" placeholder="비밀번호를 입력해 주세요." >
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="id_save_wrap">
+				<input type="checkbox" id="id_save">
+				<label for="id_save">아이디저장</label>
+			</div>
+			</fieldset>
+			</form>
+			<ul class="login_ul">
+				<li>
+					<a href="join1.html">
+						<div class="login_ul_img">
+							<img src="images/login_img/btnicon1.png" alt="">
+						</div>
+						<div class="login_ul_text">
+							<h3>회원가입</h3>
+							<p>회원가입을 하시면 다양한 메뉴를 <br>이용하실 수 있습니다.</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="login_ul_img">
+							<img src="images/login_img/btnicon2.png" alt="">
+						</div>
+						<div class="login_ul_text">
+							<h3>아이디 / 비밀번호 찾기</h3>
+							<p>아이디와 비밀번호를 잊으셨나요? <br> 정보를 입력하시면 찾으실 수 있습니다.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="login_logo">
+			<img src="images/login_img/loginLogo.png" alt="jangin furniture">
+		</div>
+	</div>
+</div><!--inner-->
+</div><!--container-->
+<footer id="footer">
+	<div class="inner">
+		<div class="footer_top">
+			<h4 class="footer_logo"><a href=""><img src="images/footlogo.png" alt="장인가구"></a></h4>
+			<ul class="intro">
+				<li><a href="">회사소개</a></li>
+				<li><a href="">장인가구 소식</a></li>
+				<li><a href="">사이트맵</a></li>
+				<li><a href="">개인정보 처리방침 </a></li>
+			</ul>
+			<address>
+				<h4>INFO</h4>
+				<ul>
+					<li>상호<span>장인가구(주)</span></li>
+					<li>사업자 등록번호<span>139-81-02019</span></li>
+					<li>대표이사<span>조재민</span></li>
+					<li>주소<span>인천고아역시 남동구 호구포로 44번길 23-30</span></li>
+				</ul>
+			</address>
+			<div class="customer">
+				<h4>Customer Center</h4>
+				<p>1522-4900</p>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<p>COPYRIGHT(c)2018 JANGIN. ALL RIGHTS RESERVED.</p>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

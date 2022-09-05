@@ -1,0 +1,59 @@
+@import url(reset.css);
+
+/* common */
+a{text-decoration:none;color:#555;}
+
+html,body{height:100%;}
+body{font-size:14px;line-height:1.2;font-weight:100;color:#555;word-break:break-all;}
+
+/* header */
+.logo{position:absolute;top:100px;left:50%;width:378px;height:20px;margin-left:-190px;
+		background:url(../images/ci.png) no-repeat 0 0;
+		text-indent:-9999px;overflow:hidden;}
+.top_menu{position:absolute;top:30px;right:70px;z-index:100;}
+.top_menu li{display:inline-block;width:110px;padding:5px;margin-left:2px;border:1px solid #ddd;}
+.top_menu li a{display:block;width:100%;height:100%;color:#fff;
+				padding:5px;text-align:center;box-sizing:border-box;}
+.top_menu li:hover{background:#fff;}
+.top_menu li:hover a{color:#000;font-weight:bold;}
+
+/* content */
+#wrap{position:relative;height:100vh;/*배경높이유지안됨*/min-width:1280px;min-height:768px;
+		background:url(../images/hub-cover.jpg) no-repeat 0 0; background-size:cover;}
+.inner{width:1181px;height:100%;margin:0 auto;background:url(../images/bg-line.png) no-repeat 0 0;}
+.gnb{display:flex;justify-content:space-between;width:100%;height:100%;}
+.gnb > li{position:relative;width:25%;height:100%; transition:all 1s;}
+.gnb > li > span{position:absolute;top:50%;left:50%;margin:-25px 0 0 -84px;
+				width:170px;height:41px; 
+				background:url(../images/hub-logo.png) no-repeat 0 0;
+				display:block;color:#fff;text-indent:-9999px;overflow:hidden;}
+.gnb > li:nth-child(2) span{width:171px;height:41px;background-position:0 -60px;}
+.gnb > li:nth-child(3) span{width:185px;height:41px;background-position:0 -120px;}
+.gnb > li:nth-child(4) span{width:217px;height:41px;background-position:0 -200px;
+							margin:-25px 0 0 -108px;}
+.gnb > li:nth-child(5) span{width:100px; height:41px; background-position:0 -260px;}
+
+.gnb > li:hover span{display:none;}
+
+/* depth */
+.depth h2 a{display:block;width:100%;height:100%;}
+.depth h2 {text-indent:-9999px;overflow:hidden;width:225px;height:50px;margin:30px auto;
+			background:url(../images/hub-logo.png) no-repeat -215px 0;}
+.depth2 h2{background-position:-215px -60px;}
+.depth3 h2{background-position:-230px -120px;}
+.depth4 h2{background-position:-235px -200px;}
+.depth5 h2{background-position:-180px -260px;}
+
+.depth{position:absolute;top:20%;left:0;right:0; display:none;}
+.gnb > li:hover {background:rgba(0,0,0,0.5);}
+.gnb > li:hover .depth{display:block;}
+.depth ul li{padding:20px 0;text-indent:15px;}
+.depth ul li a{color:#aaa;font-size:18px;font-weight:bold;}
+.depth ul li:hover a{color:#fff;}
+.depth ul li:hover a:after{content:'';display:inline-block;width:15px;height:15px;margin-top:5px;
+					background:url(../images/ico_arrow.png) no-repeat 0 0;
+					background-size:contain;float:right;}
+
+/* footer */
+#footer{position:absolute;bottom:45px;left:0;right:0;}
+#footer p{text-align:center;color:#999;}

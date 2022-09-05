@@ -1,0 +1,83 @@
+@import url(reset.css);
+
+/* common */
+a{text-decoration:none; color:#555;}
+.inner{width:1560px;margin:0 auto;}
+
+/* 헤더  총 height:127px*/
+header{position:fixed;z-index:100;width:100%;
+		background:rgba(255,255,255,0.5);transition:all 0.5s;}
+header:hover{background:#fff;}
+.logo{text-align:center;margin-top:20px;}
+
+.topmenu{position:absolute;top:10px;right:50%; margin-right:-780px;}
+.topmenu > a{display:inline-block;margin-left:10px;font-size:14px;}
+
+/* header - gnb && 하위메뉴 */
+.gnb_all:before{content:'';/*1 display:none; */opacity:0;transition:all 1s;width:100%;
+				height:0;position:absolute;top:127px;left:0;right:0;background:#fff;}
+.gnb_all:hover:before{content:'';/*1 display:block; */ opacity:1;height:320px;}
+.gnb_all:hover .deps{/*2 display:block; */opacity:1;height:320px;text-indent:0;transition:all 0.5s;}
+.gnb:after{content:'';display:block;clear:both;}
+.gnb{width:1560px;margin:0 auto;margin-top:10px;}
+.gnb > li{position:relative;float:left;width:calc(100% / 6);padding:10px 0;
+			font-size:24px;font-weight:600;text-align:center;}
+.gnb > li:hover{background:#999;}
+.gnb > li:hover > a{display:block;width:100%;height:100%;color:#fff;}
+.gnb > li > a:after{content:'';display:block;width:0;height:5px;background:#555;
+					  position:absolute;bottom:-1px;left:0;transition:all 1s;}
+.gnb> li:hover > a:after{content:'';display:block;width:100%;}
+.deps{/*2 display:none;  */opacity:0; height:0;text-indent:-9999px;overflow:hidden;
+		position:absolute;top:70px;left:0;right:0;width:100%;}
+.deps li{line-height:2.5;font-size:1.2rem;}
+.deps li:hover {background:#999;}
+.deps li:hover a{color:#fff;}
+
+/* login - container----------------------------------------------------------- */
+#container{padding-top:127px;}
+#container .login_inner{width:1560px;margin:30px auto;}/* margin 위로 30px*/
+.title_login{margin-top:100px;text-align:center;font-size:30px;font-weight:bold;}/*margin 위로 100px*/
+.login_wrap > div{width:50%;}
+.login_wrap{display:flex; justify-content:space-between;}
+table{margin-bottom:10px;}
+input{border:none;background:#f4f4f4;}
+
+/* login-left */
+.login_table{padding:110px 0 110px 110px;box-sizing:border-box; }
+tr,th,td{border-collapse:collapse;font-size:18px;font-weight:bold;}
+tr{height:51px;}
+th{width:90px;line-height:51px;text-align:left;}
+td:nth-child(2){width:445px;}
+td:nth-child(2) input{width:100%;height:51px;padding-left:10px;box-sizing:border-box;}
+.btn_login1 button{cursor:pointer;width:150px;height:115px;margin-left:5px;background:#d10724;border:none;color:#fff;font-size:20px;}
+
+.id_save_wrap{padding-left:85px;box-sizing:border-box;}
+.id_save_wrap input{width:18px;height:18px;margin-right:6px;background:#fff;}
+.id_save_wrap label{font-size:18px;font-weight:bold;}
+
+/* login_ul */
+.login_ul{display:flex;justify-content:space-between;margin-top:30px;width:100%;}
+.login_ul > li{width:48%;font-size:0.8rem;border:1px solid #999;padding:15px;box-sizing:border-box;}
+.login_ul > li > a{display:flex;justify-content:sapce-between; width:100%;height:100%;}
+.login_ul h3{color:#666;font-weight:800;margin-bottom:5px;}
+
+.login_ul_img{padding:10px;box-sizing:border-box;}
+.login_ul_img img{margin-right:5px;}
+
+
+/* login-right */
+.login_logo{text-align:center;padding:102px 0;vertical-align:middle;box-sizing:border-box;}
+
+/*--------------------------------------------------------------------------------*/
+
+/* footer */
+footer{background:#f3f3f3;}
+/* footer_top */
+.footer_top{display:flex;justify-content:space-between;padding:30px 50px;}
+.footer_top ul li{line-height:200%;}
+.footer_top address h4{font-weight:700;padding-bottom:3px;}
+.customer h4{font-weight:bold;}
+.customer p{font-weight:bold;font-size:30px;}
+
+/* footer_bottom */
+.footer_bottom{text-align:center;padding:30px 0;}

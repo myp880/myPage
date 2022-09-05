@@ -1,0 +1,271 @@
+@import url(reset.css);
+
+/*common*/
+a{color:#666;text-decoration: none;}
+
+/*======================== 모바일 모드 ==============================*/
+@media all and (max-width:767px) {
+
+ /*common*/
+a{color:#666;text-decoration: none;}
+.inner{width:99%;margin:0 auto;}
+.header_fixed{position:fixed;top:0px;}
+.header_relative{position:relative;}
+
+/*head_top*/
+.head_top{position:relative;z-index:1;
+            width:100%;height:600px;padding-top:55px;box-sizing:border-box;
+            background:url(../images/hd-visual.png) no-repeat center center fixed;
+            background-size:cover;
+            text-align:center;}
+.head_top > a {position:fixed;left:0;right:0;
+                /*display:block;width:300px;height:auto;margin:180px auto 0 auto;*/}
+.head_top img{width:100%;height:100%;}
+#wrap{background:#fff;}
+
+/*header*/
+.btn_allmenu{display:none;}
+#header{position:relative;z-index:10;width:100%;height:100px;background:#fff;}
+.header_wrap{width:100%;height:100px;background:#fff;}
+.logo{position:absolute;top:25px;left:0; width:140px;}
+.logo img{width:100%;height:100%;}    
+nav{position:absolute;z-index:20;top:80px;left:0;background:#fff;width:100%;height:270px;margin:0 auto;
+    /*햄버거로 만들거*/display:none;}
+.btn_allmenu{width:36px;height:32px;background:#fff;border:none;cursor:pointer;}
+.btn_allmenu_open{position:absolute;top:35px;right:10px;display:block;}    
+.btn_allmenu_open span{position:absolute;top:50%;left:0px;margin-top:-1.5px;
+                        display:block;width:35px;height:3px;background:black;text-indent:-9999px;overflow:hidden;}    
+.btn_allmenu_open:before{position:absolute;top:5px;left:0px;
+                        content:'';display:block;width:35px;height:3px;background:#000;}
+.btn_allmenu_open:after{position:absolute;bottom:5px;left:0px;
+                        content:'';display:block;width:35px;height:3px;background:#000;}
+.btn_allmenu_open.ex span{opacity:0;}    
+.btn_allmenu_open.ex:before{transform:rotate(45deg);transform-origin: 5px 8px;
+                            -ms-transform:rotate(45deg);-ms-transform-origin: 5px 8px;}
+.btn_allmenu_open.ex:after{transform:rotate(-45deg);transform-origin: 6px 0px;
+                            -ms-transform:rotate(-45deg);-ms-transform-origin: 6px 0px;}    
+    
+.btn_allmenu_close{display:none;}    
+.gnb{width:100%;height:100%;}
+.gnb > li {height:44px;line-height:45px;padding:0 20px;text-align:left;border-bottom:1px solid #ccc;}
+.gnb > li:after{content:'';display:inline-block;float:right;margin-top:11px;width:20px;height:20px;
+                background:url(../images/gnb_ic_p.png) no-repeat center;}    
+.topmenu{position:absolute;top:35px;right:55px;display:flex;flex-flow:row nowrap;font-size:0.8rem;}
+.topmenu > li{margin:0 7px;width:36px;height:32px;}
+.topmenu > li:first-child{background:url(../images/topmenu-1.png) no-repeat center;}    
+.topmenu > li:nth-child(2){display:none;}    
+.topmenu > li:nth-child(3){display:none;}    
+.topmenu > li:nth-child(4){background:url(../images/topmenu2.png) no-repeat center;}
+.topmenu > li:last-child{background:url(../images/topmenu-3.png) no-repeat center;}
+.topmenu > li > a{display:block;width:100%;height:100%;text-indent:-9999px;overflow:hidden;}    
+.btn_search{color:transparent;cursor:pointer;
+            background:url(../images/search.png) no-repeat center;background-size:cover;}    
+.btn_search input{display:none;}    
+/*.topmenu_mob{display:none;}*/
+
+/*#container*/
+#container{position:relative;z-index:2;background:#fff;}    
+    
+/*sec_video*/
+.sec_video{position:relative;width:100%;}    
+video{width:100%;}
+.sec_video source{width:100%;}
+.video_text{display:none;}
+
+
+/*sec_bg*/
+.sec_bg{width:100%;height:700px;
+        background:url(../images/about-bg.jpg) no-repeat center fixed;
+        background-size:cover;}    
+/*sec_content*/
+.sec_content{width:80%;margin:0 auto;text-align:center;}
+.content_text h2{font-size:1.5rem;font-weight:500;padding:100px 0 20px 0;}
+.content_text p{padding-bottom:100px;margin-bottom:50px;border-bottom:1px solid #ccc;font-size:0.8rem;color:#999;line-height:2;}
+.sec_content img{width:100%;height:auto;margin-bottom:100px;}
+.content_img li{position:relative;}    
+.img_text{position:absolute;top:15%;right:0;left:0;text-align:center;color:#fff;}
+.img_text h3{font-size:1.2rem;margin-bottom:15px;}
+.img_text p{font-size:0.8rem;line-height:1.6;}
+.img_text br{display:none;}    
+    
+.content_img li:last-child p{font-size:1.5rem;font-weight:500;margin-bottom:20px;}
+.content_img li:last-child h4{font-size:1.2rem;padding-bottom:20px;}  
+    
+    
+/*footer*/
+footer{ position:relative;z-index:2;
+        width:100%;color:#fff;font-size:0.9rem;
+        background:url(../images/hd-visual.png) no-repeat center; background-position:cover;}
+footer a{color:#fff;}
+  
+.footer_wrap{width:100%;height:100%;padding:0 5% 5% 0;box-sizing:border-box;background:rgba(0,0,0,0.8);}
+.footer_wrap .inner{position:relative;width:95%;height:430px;margin:0 auto;padding:5% 0;box-sizing:border-box;}    
+.footer_info{position:absolute;bottom:0;left:0;right:0;
+            width:100%;text-align:center;line-height:2.4;font-size:0.7rem;}
+.footer_info h1{margin-bottom:20px;}
+
+.footer_menu{float:left;width:50%;text-align:center;}
+.footer_menu h4{font-size:1.5rem;margin-bottom:40px;}
+.footer_menu li{font-size:0.7rem;margin-bottom:20px;}
+    
+}
+/*======================== 모바일 모드 끝 ==============================*/
+
+/*======================== 태블릿 모드 ==============================*/
+@media all and (min-width:768px) and (max-width:1024px) {
+ /*common*/
+a{color:#666;text-decoration: none;}
+.inner{width:99%;margin:0 auto;}
+.header_fixed{position:fixed;top:0px;}
+.header_relative{position:relative;}
+
+/*head_top*/
+.head_top{position:relative;z-index:1;
+            width:100%;height:600px;padding-top:55px;box-sizing:border-box;
+            background:url(../images/hd-visual.png) no-repeat center center;
+            background-size:cover;
+            text-align:center;}
+.head_top > a {position:fixed;left:0;right:0;}
+#wrap{background:#fff;}
+
+/*header*/
+.btn_allmenu{display:none;}
+#header{position:relative;z-index:10;width:100%;height:100px;background:#fff;}
+.header_wrap{width:100%;height:100px;background:#fff;}
+.logo{position:absolute;top:25px;left:0; width:140px;}
+.logo img{width:100%;height:100%;}    
+nav{width:470px;height:100px;margin:0 auto; line-height: 100px;}
+.gnb{width:100%;height:100px;}
+.gnb > li {float:left; width:calc(100% / 6);text-align: center;}
+.topmenu{position:absolute;top:40px;right:10px;display:flex;flex-flow:row nowrap;font-size:0.8rem;}
+.topmenu > li{margin:0 4px;}
+.topmenu > li:nth-child(4),.topmenu > li:last-child{display:none;}    
+.topmenu_mob{display:none;}
+
+    
+/*#container*/
+#container{position:relative;z-index:2;}
+
+/*sec_video*/
+.sec_video{position:relative;width:100%;}    
+video{width:100%;}
+.sec_video source{width:100%;}
+.video_text{position:absolute;top:45%;left:0;right:0;text-align:center;}
+.video_text h2{font-size:2rem;color:#fff;margin-bottom:10px;}    
+.video_text p{font-size:1.2rem;color:#fff;}
+
+/*sec_bg*/
+.sec_bg{width:100%;height:700px;
+        background:url(../images/about-bg.jpg) no-repeat center fixed;
+        background-size:cover;}    
+/*sec_content*/
+.sec_content{width:80%;margin:0 auto;text-align:center;background:#fff;}
+.content_text h2{font-size:1.5rem;font-weight:500;padding:100px 0 20px 0;}
+.content_text p{padding-bottom:100px;margin-bottom:50px;border-bottom:1px solid #ccc;font-size:0.8rem;color:#999;line-height:2;}
+.sec_content img{width:100%;height:auto;margin-bottom:100px;}
+.content_img li{position:relative;}    
+.img_text{position:absolute;top:30%;right:1%;text-align:right;color:#fff;}
+.img_text h3{font-size:1.4rem;margin-bottom:15px;}
+.img_text p{font-size:0.8rem;line-height:1.8;}
+    
+.content_img li:last-child p{font-size:1.5rem;font-weight:500;margin-bottom:20px;}
+.content_img li:last-child h4{font-size:1.2rem;margin-bottom:20px;}  
+    
+    
+/*footer*/
+footer{position:relative;z-index:2;
+        width:100%;color:#fff;font-size:0.9rem;
+        background:url(../images/hd-visual.png) no-repeat center; background-position:cover;}
+footer a{color:#fff;}
+  
+.footer_wrap{width:100%;height:100%;padding:0 5% 5% 0;box-sizing:border-box;background:rgba(0,0,0,0.8);}
+.footer_wrap .inner{position:relative;width:95%;height:430px;margin:0 auto;padding:5% 0;box-sizing:border-box;}    
+.footer_info{position:absolute;bottom:0;left:0;right:0;
+            width:100%;text-align:center;line-height:2.4;font-size:0.8rem;}
+.footer_info h1{margin-bottom:20px;}
+
+.footer_menu{float:left;width:50%;text-align:center;}
+.footer_menu h4{font-size:2rem;margin-bottom:40px;}
+.footer_menu li{margin-bottom:20px;}       
+    
+}
+/*======================== 태블릿 모드 끝 ==============================*/
+
+
+/*======================== PC 모드 ==============================*/
+@media all and (min-width:1024px) {
+    
+/*common*/
+a{color:#666;text-decoration: none;}
+.inner{width:1000px;margin:0 auto;}
+.header_fixed{position:fixed;top:0px;}
+.header_relative{position:relative;}
+
+/*head_top*/
+.head_top{position:relative;z-index:1;
+            width:100%;height:600px;padding-top:55px;box-sizing:border-box;
+            background:url(../images/hd-visual.png) no-repeat center center fixed;
+            background-size:cover;
+            text-align:center;}
+.head_top > a {position:fixed;left:0;right:0;}
+#wrap{background:#fff;}
+
+/*header*/
+.btn_allmenu{display:none;}
+#header{position:relative;z-index:10;width:100%;height:100px;background:#fff;}
+.header_wrap{width:100%;height:100px;background:#fff;}
+.logo{position:absolute;top:25px;left:0; width:164px;}
+.logo img{width:100%;height:100%;}    
+nav{width:100%;height:100px; line-height: 100px;}
+.gnb{width:640px;height:100px;margin:0 auto;}
+.gnb > li {float:left; width:calc(100% / 6);text-align: center;}
+.topmenu{position:absolute;top:40px;right:0;display:flex;flex-flow:row nowrap;font-size:0.8rem;}
+.topmenu > li{margin:0 4px;}
+.btn_search{}
+.btn_search input{background:url(../images/search.png) no-repeat center;;
+                width:20px;padding-left:10px;color:transparent;cursor:pointer;border:none;}
+.topmenu_mob{display:none;}
+
+/*MAIN-CONTAINER*/
+#container{position:relative;z-index:20;background:#fff;}
+
+/*sec_video*/
+.sec_video{position:relative;width:100%;}    
+video{width:100%;}
+.sec_video source{width:100%;}
+.video_text{position:absolute;top:45%;left:0;right:0;text-align:center;}
+.video_text h2{font-size:2rem;color:#fff;margin-bottom:10px;}    
+.video_text p{font-size:1.2rem;color:#fff;}
+
+/*sec_bg*/
+.sec_bg{width:100%;height:700px;
+        background:url(../images/about-bg.jpg) no-repeat center fixed;
+        background-size:cover;}    
+/*sec_content*/
+.sec_content{width:80%;margin:0 auto;text-align:center;}
+.content_text h2{font-size:1.5rem;font-weight:500;padding:100px 0 20px 0;}
+.content_text p{padding-bottom:100px;margin-bottom:50px;border-bottom:1px solid #ccc;font-size:0.8rem;color:#999;line-height:2;}
+.sec_content img{width:100%;height:auto;margin-bottom:100px;}
+.content_img li{position:relative;}    
+.img_text{position:absolute;top:30%;right:1%;text-align:right;color:#fff;}
+.img_text h3{font-size:1.4rem;margin-bottom:15px;}
+.img_text p{font-size:0.8rem;line-height:1.8;}
+    
+.content_img li:last-child p{font-size:1.5rem;font-weight:500;margin-bottom:20px;}
+.content_img li:last-child h4{font-size:1.2rem;margin-bottom:20px;}    
+    
+    
+/*footer*/
+footer{position:relative;z-index:2;
+        height:450px;width:100%;background:url(../images/hd-visual.png) no-repeat center; background-position:cover;color:#fff;font-size:0.9rem;}
+footer a{color:#fff;}
+.footer_wrap{width:100%;height:100%;background:rgba(0,0,0,0.8);}
+.footer_wrap .inner{display:flex;justify-content:space-between;padding-top:80px;box-sizing:border-box;}
+.footer_info{line-height:2.4;}
+.footer_info h1{margin-bottom:20px;}
+
+.footer_menu h4{font-size:2rem;margin-bottom:40px;}
+.footer_menu li{margin-bottom:20px;}    
+    
+}
+/*======================== PC 모드 끝==============================*/

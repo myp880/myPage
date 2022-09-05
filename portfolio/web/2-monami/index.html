@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>모나미</title>
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<!--   
+<script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+		slideWidth: 400,
+		maxSlides:3,
+		minSlides:3,
+		auto: true,
+		autoControls: true,
+		stopAutoOnClick: true,
+		pager: true,
+		  adaptiveHeight: true,
+		    adaptiveWidth: true
+	  });
+    });
+ </script>
+ -->
+<script src="js/tab.js"></script>
+<script src="js/slick.js"></script>
+
+</head>
+<body>
+<div id="skipNavi"><a href="#container">본문으로가기</a><a href="#gnb">주메뉴 가기</a></div>
+<header>
+	<div class="header_top">
+		<div class="inner">
+			<ul class="links">
+				<li>
+					<form action="">
+						<fieldset>
+						<legend class="blind">언어선택</legend>
+							<select name="" id="">
+							<option value="" selected><a href="#">KOR</a></option>
+							<option value=""><a href="#">ENG</a></option>
+							</select>
+						</fieldset>
+					</form>
+				</li>
+				<li><a href="#">트위터</a></li>
+				<li><a href="#">인스타그램</a></li>
+			</ul>
+			<ul class="top_menu">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">SITE MAP</a></li>
+				<li><a href="#">SONTACT US</a></li>
+			</ul>
+		</div><!--inner-->
+	</div><!--header_top-->
+	<div class="header_bottom">
+		<div class="header_inner">
+			<h1 class="logo"><a href="#"><img src="images/logo.jpg" alt="monami"></a></h1>
+			<nav class="gnb_wrap">
+				<ul id="gnb" class="gnb">
+					<li>
+						<a href="#">모나미소개</a>
+						<div class="dep_wrap">
+							<ul class="dep">
+								<li><a href="#">CEO 메시지</a></li>
+								<li><a href="#">회사정보</a></li>
+								<li><a href="#">회사연혁</a></li>
+								<li><a href="#">투자정보</a></li>
+								<li><a href="#">CI</a></li>
+								<li><a href="#">채용정보</a></li>
+								<li><a href="#">찾아오시는 길</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">모나미제품</a>
+						<div class="dep_wrap">
+							<ul class="dep">
+								<li><a href="#">펜</a></li>
+								<li><a href="#">마카</a></li>
+								<li><a href="#">형광펜</a></li>
+								<li><a href="#">회화구류</a></li>
+								<li><a href="#">기타</a></li>
+								<li><a href="#">카탈로그</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">문구박물관</a>
+						<div class="dep_wrap">
+							<ul class="dep">
+								<li><a href="#">문구박물관</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">고객지원</a>
+						<div class="dep_wrap">
+							<ul class="dep">
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">문의하기</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">모나미 패밀리샵 찾기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">NEWS & VIDEO</a>
+						<div class="dep_wrap">
+							<ul class="dep">
+								<li><a href="#">보도좌료</a></li>
+								<li><a href="#">동영상 자료</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="allmenu"><!--allmenu-->
+					<ul class="gnb2">
+						<li>
+							<a href="#">모나미소개</a>
+							<div class="dep_wrap2">
+								<ul class="dep2">
+									<li><a href="#">CEO 메시지</a></li>
+									<li><a href="#">회사정보</a></li>
+									<li><a href="#">회사연혁</a></li>
+									<li><a href="#">투자정보</a></li>
+									<li><a href="#">CI</a></li>
+									<li><a href="#">채용정보</a></li>
+									<li><a href="#">찾아오시는 길</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">모나미제품</a>
+							<div class="dep_wrap2">
+								<ul class="dep2">
+									<li><a href="#">펜</a></li>
+									<li><a href="#">마카</a></li>
+									<li><a href="#">형광펜</a></li>
+									<li><a href="#">회화구류</a></li>
+									<li><a href="#">기타</a></li>
+									<li><a href="#">카탈로그</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">문구박물관</a>
+							<div class="dep_wrap2">
+								<ul class="dep2">
+									<li><a href="#">문구박물관</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">고객지원</a>
+							<div class="dep_wrap2">
+								<ul class="dep2">
+									<li><a href="#">자주묻는질문</a></li>
+									<li><a href="#">문의하기</a></li>
+									<li><a href="#">이벤트</a></li>
+									<li><a href="#">모나미 패밀리샵 찾기</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">NEWS & VIDEO</a>
+							<div class="dep_wrap2">
+								<ul class="dep2">
+									<li><a href="#">보도좌료</a></li>
+									<li><a href="#">동영상 자료</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>					
+				</div><!--allmenu-->
+			<form action="" class="btn_search">
+				<input type="search">
+				<input type="image" src="images/btn-search.gif">
+			</form>
+		</div>
+	</div><!--header_bottom-->
+</header>
+<div id="container">
+	<div class="main_visual">
+		<!-- <p><img src="images/visual1.jpg" alt="여자사진"></p> -->
+		<div class="inner main_text">
+			<h2>
+				어쩌면 삶은 <br>
+				인생이라는 종이 위에 <br>
+				써 내려가는 <br>
+				펜의 기록 같습니다.
+			</h2>
+			<small>
+				그중에서도 지우고 싶지 않은 기록이 있습니다. <br>
+				모나미는 언제나 당신의 행복한 기록과 함께입니다.
+			</small>
+		</div><!--inner-->
+	</div><!--main_visual-->
+	<div class="content1">
+		<div class="inner">
+			<div class="name">
+				<h2>NEW	<br> ARRIVALS</h2>
+				<p>가장 먼저 만나는 설레는 기다림</p>
+			</div>
+			<div class="con1_img">
+				<div class="line">
+					<a href="" class="box_sm box_1"><img src="images/box1.jpg" alt="모나미 볼펜 한세트"></a>
+					<a href="" class="box_lg box_2"><img src="images/box2.jpg" alt="모나미 만년필"></a>
+				</div>
+				<div class="line">
+					<a href="" class="box_sm box_3"><img src="images/box3.jpg" alt="네일아트팬"></a>
+					<a href="" class="box_sm box_4"><img src="images/box4.jpg" alt="형광펜세트"></a>
+					<a href="" class="box_sm box_5"><img src="images/box5.jpg" alt="모나미 물감"></a>
+				</div>
+			</div><!--con1_img-->
+		</div>
+	</div><!--content1-->
+
+	<div class="content2">
+		<div class="inner">
+			<div class="name">
+				<h2>BEST PRODUCT</h2>
+				<p>언제 어디서나 생활 속에 함께하는 모나미</p>
+				<ul id="tabmenu" class="tabmenu">
+					<li>
+						<a href="#pen1"class="tab">펜</a>
+						<div id="pen1" class="slider"> <!--.slider-->
+							<figure>
+								<a href="#">
+								<img src="images/pen7.jpg" alt="유성볼펜 153아미">
+								<figcaption>
+									유성볼펜 
+									<span>153 아미</span>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen6.jpg" alt="유성볼펜 153 블라썸">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블라썸</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen5.jpg" alt="유성볼펜 153 네오만년필">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오만년필</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen3.jpg" alt="유성볼펜 153 네오(밀키)">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오 (밀키)</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen2.jpg" alt="유성볼펜 153 블랙&화이트">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블랙&화이트</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen1.jpg" alt="유성볼펜 153 골드">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 골드</p>
+								</figcaption>
+								</a>
+							</figure>
+						</div>
+					</li>
+					<li>
+						<a href="#pen2" class="tab">마카</a>
+						<div id="pen2">
+							<figure>
+								<a href="#">
+								<img src="images/pen1.jpg" alt="유성볼펜 153 아미">
+								<figcaption>
+									유성볼펜 
+									<span>153 아미</span>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen2.jpg" alt="유성볼펜 153 블라썸">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블라썸</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen3.jpg" alt="유성볼펜 153 네오만년필">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오만년필</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen5.jpg" alt="유성볼펜 153 네오(밀키)">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오 (밀키)</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen6.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블랙&화이트</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen7.jpg" alt="유성볼펜 골드">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 골드</p>
+								</figcaption>
+								</a>
+							</figure>
+						</div>
+					</li>
+					<li>
+						<a href="#pen3" class="tab">형광팬</a>
+						<div id="pen3">
+							<figure>
+								<a href="#">
+								<img src="images/pen2.jpg" alt="유성볼펜 아미">
+								<figcaption>
+									유성볼펜 
+									<span>153 아미</span>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen3.jpg" alt="유성볼펜 블라썸">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블라썸</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen1.jpg" alt="유성볼펜 네오만년필">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오만년필</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen5.jpg" alt="유성볼펜 네오">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오 (밀키)</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen6.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블랙&화이트</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen7.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 골드</p>
+								</figcaption>
+								</a>
+							</figure>
+						</div>
+					</li>
+					<li>
+						<a href="#pen4" class="tab">회화구류</a>
+						<div id="pen4">
+							<figure>
+								<a href="#">
+								<img src="images/pen5.jpg" alt="유성볼펜">
+								<figcaption>
+									유성볼펜 
+									<span>153 아미</span>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen2.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블라썸</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen3.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오만년필</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen1.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 네오 (밀키)</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen6.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 블랙&화이트</p>
+								</figcaption>
+								</a>
+							</figure>
+							<figure>
+								<a href="#">
+								<img src="images/pen7.jpg" alt="유성볼펜">
+								<figcaption>
+									<p class="txt1">유성볼펜</p>
+									<p class="txt2">153 골드</p>
+								</figcaption>
+								</a>
+							</figure>
+						</div>
+					</li>
+				</ul>
+				<script>
+					initTabMenu("tabmenu");
+				</script>
+			</div>
+		</div>
+	</div><!--content2-->
+	<div class="content3">
+		<div class="inner">
+			<div class="news">
+				<h4>MONAMI NEWS</h4>
+				<div class="news_top">
+					<a href="#"><img src="images/news1.jpg" alt="DESIGN KOREA"></a>
+					<strong><a href="#">모나미, 신제품 '153 네오홀더샤프' 출시</a></strong>
+					<p><a href="#">연필의 필기감과 샤프의 간편한 기능을 모두 담았다! <br>
+					신제품 '153 네오 홀더샤프' 출시- 모나미, '153...
+					</a></p>
+					<span>2018-12-11</span>
+				</div>
+				<ul class="news_bottom">
+					<li><a href="#">-모나미,신제품 볼펜 '153야미' 출시</a><span>2018-12-03</span></li>
+					<li><a href="#">-모나미,2018 대한민국 디자인대상 디자인경영부문 국무총리 표창 수...</a><span>2018-11-07</span></li>
+					<li><a href="#">-모나미,제42회 환경사랑 어린이 미술대회 성료</a><span>2018-11-07</span></li>
+				</ul>
+				<p class="more"><a href="#">MORE</a></p>
+			</div><!--.news-->
+			
+			<div class="inquiry box_click">
+				<div class="tit">
+					<h5>INQUIRY</h5>
+				</div>
+				<p>언제나 소중한 의견에 귀 기울이겠습니다. <br>
+					궁금한 사항은 문의하세요.
+				</p>
+				<a href="" class="click">INQUIRY NOW</a>
+			</div>
+			<div class="family box_click">
+				<div class="tit">
+					<h5>FAMILY SHOT</h5>
+				</div>
+				<p>언제나 소중한 의견에 귀 기울이겠습니다. <br>
+					궁금한 사항은 문의하세요.
+				</p>
+				<a href="" class="click">FIND SHOP</a>			
+			</div>			
+		</div>
+	</div><!--content3-->
+	<div class="content4">
+		<div class="inner">
+			<p><a href="#"><img src="images/fam-img1.jpg" alt="monamimall"></a></p>
+			<p><a href="#"><img src="images/fam-img2.jpg" alt="monami 환경사랑 미술대회"></a></p>
+			<p><a href="#"><img src="images/fam-img3.jpg" alt="monami Pet"></a></p>
+			<p><a href="#"><img src="images/fam-img4.jpg" alt="monapte 모나르떼"></a></p>
+			<p><a href="#"><img src="images/fam-img5.jpg" alt="monami station"></a></p>
+		</div>
+	</div><!--content4-->
+</div><!--#container-->
+
+<footer>
+	<div class="inner">
+		<div class="footer_top">
+			<h3><img src="images/foot-logo.jpg" alt="monami"></h3>
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+			</ul>
+		</div><!--footer_top-->
+		
+		<div class="footer_bottom">
+			<address>
+				<h4>INFO</h4>
+				<p>주소:경기도 용인시 수지구 손곡로 17 | TEL : 031-216-0153 | FAX : 031-270-5154</p>
+				<p>COPYRIGHT(C) 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED.</p>
+			</address>
+			<div class="customer">
+				<h4>CUSTOMER CENTER</h4>
+				<p>080-022-0153</p>
+			</div>
+			<div class="family_site">
+				<form action="">
+					<fieldset>
+					<legend class="blind">패밀리 사이트 모음</legend>
+						<select name="" id="">
+							<option value="">FAMILY SITE</option>
+							<option value="">모나미몰</option>
+							<option value="">모나르떼</option>
+							<option value="">모나미펫</option>
+							<option value="">모나미 컨셉스토어</option>
+							<option value="">주식회사 항소</option>
+						</select>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
