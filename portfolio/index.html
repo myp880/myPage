@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/main.css">
 
 <script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/main3.js"></script>
+<script src="js/main.js"></script>
 
 <!--[if lt IE9]>
 <script src="js/html5shiv.js"></script>
@@ -21,13 +21,14 @@
 </head>
 <body>
 <div id="skipNavi">
-<p><a href="#">본문으로가기</a></p>
-<p><a href="#">주메뉴가기</a></p>
+<p><a href="index.html">본문으로가기</a></p>
+<p><a href="#gnb">주메뉴가기</a></p>
 </div>
 <header id="header">
-	<h1 class="logo"><a href="#"><img src="images/logo11.png" alt="MYP"></a></h1>
+	<h1 class="logo"><a href="index.html"><img src="images/logo11.png" alt="MYP"></a></h1>
 	<button class="btn_allmenu"><div><span>전체메뉴</span></div></button>
 	<nav class="gnb_wrap">		
+        <h2 class="blind">주메뉴</h2>
 		<ul class="gnb" id="gnb">
 			<li class="btn_web">
 			    <a href="#content_web">
@@ -87,6 +88,20 @@
 		<div class="inner">
 			<h2 class="title">WEB</h2>
 			<div class="web_menu  menu_flex">
+				<section class="web_sec sec">
+					<figure>
+						<img src="images/moniter-aviv.png" alt="아비브 메인이미지">
+						<figcaption>업체명 : 아비브</figcaption>
+					</figure>
+					<h4>반응형 카피</h4>
+					<ul>
+						<li><a href="web/10-aviv/index.html">index</a></li>
+					</ul>
+					<div class="web_btn">
+						<a href="images/modal-aviv.png" class="modal">설명 보기</a>
+						<a href="https://avivland.com/"target="_blank">공식 홈페이지</a>
+					</div>
+				</section><!--//sec-->
 				<section class="web_sec sec">
 					<figure>
 						<img src="images/moniter-mememe.png" alt="미미미 메인이미지">
@@ -336,72 +351,96 @@
 			<p class="title_text">캐릭터 모작</p>
 			<div class="design_menu menu_flex character">
 				<section class="character_box">
-					<ul>
-						<li>
-						    <figure>
-						        <img src="images/pizz2.png" alt="피즈">
-                                <figcaption>모작 펜툴 스케치</figcaption>
-						    </figure>
-						</li>
-						<li>
-						    <figure>
-						        <img src="images/pizz.png" alt="피즈 라인">
-						        <figcaption>작업한 모작</figcaption>
-						    </figure>
-						</li>
-					</ul>
-					<p><a href="images/modal-1champ2.png" class="modal">원본 보기</a></p>
+				    <a href="images/character1-ori.png" class="modal">
+				        <figure>
+				            <img src="images/character1-ori.png" alt="피즈 원본">
+				            <figcaption>원본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character1-sche.png" class="modal">
+				        <figure>
+				            <img src="images/character1-sche.png" alt="피즈">
+				            <figcaption>모작 스케치</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character1-mozac.png" class="modal">
+				        <figure>
+				            <img src="images/character1-mozac.png" alt="피즈 모작">
+				            <figcaption>모작 완성본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>		
 				</section>
 				<section class="character_box">
-					<ul>
-						<li>
-						    <figure>
-						        <img src="images/narr2.png" alt="나르">
-                                <figcaption>모작 펜툴 스케치</figcaption>
-						    </figure>
-						</li>
-						<li>
-						    <figure>
-						        <img src="images/narr.png" alt="나르 라인">
-						        <figcaption>작업한 모작</figcaption>
-						    </figure>
-						</li>					
-					</ul>
-					<p><a href="images/modal-2champ.png" class="modal">원본 보기</a></p>
+				    <a href="images/character2-ori.png" class="modal">
+				        <figure>
+				            <img src="images/character2-ori.png" alt="나르 원본">
+				            <figcaption>원본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character2-sche.png" class="modal">
+				        <figure>
+				            <img src="images/character2-sche.png" alt="나르 스케치">
+				            <figcaption>모작 스케치</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character2-mozac.png" class="modal">
+				        <figure>
+				            <img src="images/character2-mozac.png" alt="피즈 라인">
+				            <figcaption>모작 완성본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>				
 				</section>
 				<section class="character_box">
-					<ul>
-						<li>
-						    <figure>
-						        <img src="images/nidalee2.png" alt="니달리">
-                                <figcaption>모작 펜툴 스케치</figcaption>
-						    </figure>
-						</li>
-						<li>
-						    <figure>
-						        <img src="images/nidalee.png" alt="니달리 스케치">
-						        <figcaption>작업한 모작</figcaption>
-						    </figure>
-						</li>						
-					</ul>
-					<p><a href="images/modal-3champ.jpg" class="modal">원본 보기</a></p>
+				    <a href="images/character3-ori.png" class="modal">
+				        <figure>
+				            <img src="images/character3-ori.png" alt="카직스 원본">
+				            <figcaption>원본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character3-sche.png" class="modal">
+				        <figure>
+				            <img src="images/character3-sche.png" alt="카직스 스케치">
+				            <figcaption>모작 스케치</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character3-mozac.png" class="modal">
+				        <figure>
+				            <img src="images/character3-mozac.png" alt="카직스 모작">
+				            <figcaption>모작 완성본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>				
 				</section>
 				<section class="character_box">
-					<ul>
-						<li>
-						    <figure>
-						        <img src="images/khazix2.png" alt="카직스">
-                                <figcaption>모작 펜툴 스케치</figcaption>
-						    </figure>
-						</li>
-						<li>
-						    <figure>
-						        <img src="images/khazix.png" alt="카직스 라인">
-						        <figcaption>작업한 모작</figcaption>
-						    </figure>
-						</li>						
-					</ul>
-					<p><a href="images/modal-4champ.jpg" class="modal">원본 보기</a></p>
+				    <a href="images/character4-ori.png" class="modal">
+				        <figure>
+				            <img src="images/character4-ori.png" alt="니달리 원본">
+				            <figcaption>원본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character4-sche.png" class="modal">
+				        <figure>
+				            <img src="images/character4-sche.png" alt="니달리 원본">
+				            <figcaption>모작 스케치</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>
+				    <a href="images/character4-mozac.png" class="modal">
+				        <figure>
+				            <img src="images/character4-mozac.png" alt="니달리 모작">
+				            <figcaption>모작 완성본</figcaption>
+				        </figure>
+				        <div class="img_text">크게보기</div>
+				    </a>				
 				</section>
 			</div>
 		</div><!--inner-->	
@@ -412,25 +451,27 @@
 			<h2 class="title">ABOUT ME</h2>
 			<div class="about_explain">
 				<div class="ficture">
-					<p><img src="images/myp.jpg" alt="박문영 증명사진"></p>
+					<p><img src="images/myprofile.jpg" alt="박문영 증명사진"></p>
 					<ul class="">
+						<li><span>BRITH</span>1988.07.27</li>
 						<li><span>HOME</span>서울시 성북구 정릉동</li>
 						<li><span>PHONE</span>010 - 9155 - 4622</li>
 						<li><span>EMAIL</span>myp880@gmail.com</li>
+						
 					</ul>
 				</div>
 				<div class="profile">
 					<dl>
 						<dt>EDUCATION</dt>
-						<dd>하이</dd>
+						<dd><span>2018.07 ~ 2019.04</span>대우직업능력개발원 웹퍼블리셔 수료</dd>
 					</dl>
 					<dl>
 						<dt>EXPERIENCE</dt>
-						<dd>안녕</dd>
+						<dd><span>2019.07 ~ 2022.08.19</span>웹에이전시 근무</dd>
 					</dl>
 					<dl>
-						<dt>LICENSE</dt>
-						<dd>헬로우</dd>
+						<!-- <dt>LICENSE</dt> -->
+						<!-- <dd>2018.09<span></span>GTQ 그래픽 1급</dd> -->
 					</dl>
 				</div>
 			</div><!--about_explain-->
@@ -445,7 +486,7 @@
 					<div class="skill_sub">
 						<h3>HTML</h3>
 						<span><em>90%</em></span>
-						<p>XHTML,HTML5 둘을 구별하여 사용가능합니다 <br>웹접근성을 준수하여 마크업을 구현할 수 있습니다</p>
+						<p>XHTML,HTML5를 구별하여 사용가능합니다 <br>웹접근성을 준수하여 마크업을 구현할 수 있습니다</p>
 					</div>
 				</li>
 				<li>
@@ -459,7 +500,7 @@
 					<div class="skill_sub">
 						<h3>Javascript</h3>
 						<span><em>60%</em></span>
-						<p>기본적인 변수,객체,내장함수 등을 사용가능합니다 <br>Jqury에 필요한 함수들을 익히고 있습니다</p>
+						<p>기본적인 함수,매서드 등을 사용가능합니다 <br>javascript에 필요한 함수들을 익히고 있습니다</p>
 					</div>				
 				</li>
 				<li>
@@ -518,7 +559,7 @@
 				<div class="thank_right">
 					<h4 class="">박문영</h4>
 					<p>010 - 9155 - 4622</p>
-					<p>myp880@gmail.com</p>
+					<p>myp880@naver.com</p>
 				</div>
 			</div>
 		</div><!--inner-->	
